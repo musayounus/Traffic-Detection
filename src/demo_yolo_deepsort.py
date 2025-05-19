@@ -43,6 +43,11 @@ def main(src):
         fps = 1.0 / (time.time() - t0 + 1e-6)
         cv2.putText(frame, f"{overlay} | {fps:.1f} FPS", (20, 30),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 0, 255), 2)
+        
+        total = sum(len(v) for v in counts.values())
+        density = "Low" if total < 10 else "Medium" if total < 25 else "High"
+        cv2.putText(frame, f"Density: {density}", (20, 60),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255, 255, 0), 2)
 
         cv2.imshow("Traffic", frame)
         if cv2.waitKey(1) & 0xFF == 27:
@@ -51,7 +56,6 @@ def main(src):
     cap.release()
     cv2.destroyAllWindows()
 
-    # Save final count summary
     result = {k: len(v) for k, v in counts.items()}
     with open(SAVE_COUNTS_PATH, "w") as f:
         json.dump(result, f, indent=2)
