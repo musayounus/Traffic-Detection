@@ -1,0 +1,38 @@
+﻿# Ignore the entire dataset folder
+data/
+
+# Byte-compiled / cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+.env/
+.venv/
+
+# Model training cache/logs
+*.log
+*.bak
+*.cache
+
+# YOLO and experiment artifacts (optional)
+runs/
+exp*/       
+
+# Subset and intermediate files
+train_small/
+val_small/
+train_mini/
+val_mini/
+
+# Temporary files
+*.tmp
+*.DS_Store
+*.swp
+
+# Jupyter/IPython
+.ipynb_checkpoints/
+
+# Video files
+*.mp4
