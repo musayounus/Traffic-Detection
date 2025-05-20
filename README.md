@@ -33,6 +33,12 @@ traffic-vision/
 
 ---
 
+## 🗃️ Dataset
+
+- Kaggle Link: https://www.kaggle.com/datasets/dtrnngc/ua-detrac-dataset
+
+---
+
 ## 🚀 Features
 
 - YOLOv8 object detection trained on UA-DETRAC
