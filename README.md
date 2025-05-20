@@ -44,7 +44,6 @@ traffic-vision/
 └── README.md
 ```
 
-
 ---
 
 ## 🔧 Quick Start
@@ -68,7 +67,9 @@ python src/demo_yolo_deepsort.py --source 0
 - Green boxes + class-ID labels  
 - Live FPS counter  
 - Per-class counts & density level (top-left)  
-- Final counts saved to results/final_counts.json  
+- Final counts saved to results/final_counts.json
+
+---
 
 ## 🏗️ Methodology
 
