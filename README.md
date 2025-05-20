@@ -16,7 +16,7 @@ This project implements a real-time vehicle detection, tracking, and counting sy
 |Detectors|YOLOv8-n (transfer-learned 10 epochs) • Faster R-CNN (3 epochs, COCO-style)|
 |Tracker|**Deep SORT** (Kalman + cosine metric, appearance embedding)|
 |Metrics|YOLO mAP<sub>50</sub> = 0.83 mAP<sub>50-95</sub> = 0.63 • Deep SORT MOTA ≈ 0.72|
-|Throughput|≈ 20 FPS @ 640 × 360 on consumer laptop GPU|
+|Throughput|≈ 20 FPS @ 640 × 360 on laptop 3060 RTX GPU|
 |Bonus|Rule-based **traffic-density** level (Low / Medium / High)|
 
 ---
